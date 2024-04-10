@@ -69,7 +69,9 @@ const login = async (req, res) => {
                 res.status(200).json({
                     message: "data geting Scuccefull",
                     response: true,
-                    authToken: authToken
+                    type:userData.type,
+                    authToken: authToken,
+                    address:userData.location
                 })
 
             }

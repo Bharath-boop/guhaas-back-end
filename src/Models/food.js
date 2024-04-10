@@ -15,6 +15,7 @@ const foodItemsSchema = new mongoose.Schema({
     },
     option: [
         {
+            _id : false ,
             half:{
                 type: Number,
                 requied: [true, "half value is requied"]
@@ -23,7 +24,7 @@ const foodItemsSchema = new mongoose.Schema({
                 type: Number,
                 requied: [true, "full value is requied"]
             }
-        }
+        },
     ],
     disscription: {
         type: String,
